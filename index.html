@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JATRA.PAY | Home</title>
+  <link rel="stylesheet" href="css/dash.css" />
+  <link rel="stylesheet" href="css/home.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+</head>
+<body>
+  <div class="container">
+    <!-- aside sidebar -->
+    <aside>
+      <div class="top">
+        <div class="logo">
+          <h2>JATRA.<span class="danger">PAY</span></h2>
+        </div>
+        <div class="close" id="cbtn">
+          <span class="material-symbols-sharp">close</span>
+        </div>
+      </div>
+
+      <div class="sidebar">
+        <a href="index.html" class="active">
+          <span class="material-symbols-sharp">home</span>
+          <h3>Home</h3>
+        </a>
+        <a href="html/dash.html">
+          <span class="material-symbols-sharp">grid_view</span>
+          <h3>Dashboard</h3>
+        </a>
+        <a href="html/notif.html">
+          <span class="material-symbols-sharp">mail_outline</span>
+          <h3>Notifications</h3>
+        </a>
+        <a href="html/report.html">
+          <span class="material-symbols-sharp">report</span>
+          <h3>Reports</h3>
+        </a>
+        <a href="html/set.html">
+          <span class="material-symbols-sharp">settings</span>
+          <h3>Settings</h3>
+        </a>
+        <a href="html/abt.html">
+          <span class="material-symbols-sharp">article</span>
+          <h3>About</h3>
+        </a>
+        <a href="html/login.html">
+          <span class="material-symbols-sharp">logout</span>
+          <h3>LOGOUT</h3>
+        </a>
+      </div>
+    </aside>
+
+    <!-- main content -->
+    <main>
+      <h1 class="heading">Welcome to <span id="lg">JATRA.PAY</span></h1>
+      <p class="tagline">Cashless Public Transport Fare Payment System — Simplified and Efficient</p>
+
+      <section class="how">
+        <h2>How It Works</h2>
+        <div class="cards">
+          <div class="card">
+            <img src="img/scan.png" alt="Just Scan">
+            <h3>Just Scan</h3>
+            <p>Scan the QR code using your JATRA.PAY app or USSD option.</p>
+          </div>
+
+          <div class="card">
+            <img src="img/enter.jpg" alt="Enter Amount">
+            <h3>Enter Your Amount</h3>
+            <p>Input the fare amount quickly — no cash needed.</p>
+          </div>
+
+          <div class="card">
+            <img src="img/pay.png" alt="Pay">
+            <h3>And PAY!</h3>
+            <p>Confirm payment and travel worry-free with JATRA.PAY.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- QR Section Added Here -->
+      <section class="qr-section">
+        <h2>QR Code Payment System</h2>
+        
+        <!-- Action Buttons -->
+        <div class="qr-actions">
+          <button class="qr-btn generate" id="generateQrBtn">
+            <span class="material-symbols-sharp">qr_code_2</span>
+            Generate QR Code
+          </button>
+          <button class="qr-btn scan" id="scanQrBtn">
+            <span class="material-symbols-sharp">qr_code_scanner</span>
+            Scan QR Code
+          </button>
+        </div>
+
+        <!-- QR/Scan Content Area -->
+        <div id="qrContentArea" class="qr-content-area">
+          <p class="placeholder-text">Select an option above to generate a QR code for payments or scan a QR code to make a payment.</p>
+        </div>
+      </section>
+    </main>
+
+    <!-- right panel (required for mobile toggle) -->
+    <div class="right">
+      <div class="top">
+        <button id="menu_bar">
+          <span class="material-symbols-sharp">menu</span>
+        </button>
+        <div class="theme-toggler">
+          <span class="material-symbols-sharp active">light_mode</span>
+          <span class="material-symbols-sharp">dark_mode</span>
+        </div>
+        <div class="profile">
+          <div class="info">
+            <p><b>Rehnuma</b></p>
+            <p>User</p>
+          </div>
+          <div class="pp">
+            <img src="img/p.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Payment Dialog (Hidden by default) -->
+  <div class="payment-modal" id="paymentModal">
+    <div class="payment-dialog">
+      <div class="payment-header">
+        <h3><span class="material-symbols-sharp">payments</span> Payment Details</h3>
+        <button class="close-modal" id="closePaymentBtn">
+          <span class="material-symbols-sharp">close</span>
+        </button>
+      </div>
+      <div class="payment-body">
+        <!-- Step 1: Payment Details -->
+        <div id="paymentStep1">
+          <div class="payment-info">
+            <h4>Transaction Information</h4>
+            <div class="info-row">
+              <span class="info-label">Transaction ID:</span>
+              <span class="info-value" id="transactionId">JP-2024-00123</span>
+            </div>
+            <div class="info-row">
+              <span class="info-label">Date & Time:</span>
+              <span class="info-value" id="transactionTime">Loading...</span>
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label for="startLocation">Starting Location:</label>
+            <select class="form-control" id="startLocation">
+              <option value="">-- Select Starting Point --</option>
+              <option value="GEC">GEC</option>
+              <option value="Bahaddarhat">Bahaddarhat</option>
+              <option value="Muradpur">Muradpur</option>
+              <option value="Oxygen">Oxygen</option>
+              <option value="Chawkbazar">Chawkbazar</option>
+              <option value="Station Road">Station Road</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="destination">Destination:</label>
+            <select class="form-control" id="destination">
+              <option value="">-- Select Destination --</option>
+              <option value="GEC">GEC</option>
+              <option value="Bahaddarhat">Bahaddarhat</option>
+              <option value="Muradpur">Muradpur</option>
+              <option value="Oxygen">Oxygen</option>
+              <option value="Chawkbazar">Chawkbazar</option>
+              <option value="Station Road">Station Road</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="fareAmount">Fare Amount (1-100 TK):</label>
+            <div class="fare-input-group">
+              <span class="taka-symbol">৳</span>
+              <input type="number" class="form-control" id="fareAmount" min="1" max="100" placeholder="Enter amount" style="flex: 1;">
+            </div>
+          </div>
+          
+          <p style="color: #2563eb; font-weight: 600; margin: 1rem 0; display: flex; align-items: center; gap: 0.5rem;">
+            <span class="material-symbols-sharp">qr_code</span>
+            Payment Method: QR Code
+          </p>
+          
+          <div class="payment-actions">
+            <button class="btn-secondary" id="cancelPaymentBtn">Cancel</button>
+            <button class="btn-primary" id="proceedPaymentBtn">Proceed to Pay</button>
+          </div>
+        </div>
+        
+        <!-- Step 2: Success Message (Hidden by default) -->
+        <div id="paymentStep2" style="display: none;">
+          <div class="success-dialog">
+            <span class="material-symbols-sharp success-icon">check_circle</span>
+            <h3>Payment Successful!</h3>
+            <p>Your transaction has been completed successfully.</p>
+            
+            <div style="text-align: left; margin: 2rem 0;">
+              <div class="info-row">
+                <span class="info-label">Transaction ID:</span>
+                <span class="info-value" id="successTransactionId"></span>
+              </div>
+              <div class="info-row">
+                <span class="info-label">Route:</span>
+                <span class="info-value" id="successRoute"></span>
+              </div>
+              <div class="info-row">
+                <span class="info-label">Amount:</span>
+                <span class="info-value" id="successAmount"></span>
+              </div>
+              <div class="info-row">
+                <span class="info-label">Payment Method:</span>
+                <span class="info-value">QR Code</span>
+              </div>
+              <div class="info-row">
+                <span class="info-label">Status:</span>
+                <span class="info-value" style="color: #16a34a;">Completed</span>
+              </div>
+            </div>
+            
+            <button class="btn-primary" id="closeSuccessBtn">Done</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/dash.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>

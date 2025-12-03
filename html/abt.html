@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JATRA.PAY Dashboard</title>
+  <link rel="stylesheet" href="../css/abt.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+<body>
+  <div class="container">
+    <!-- aside -->
+    <aside>
+      <!-- top -->
+      <div class="top">
+        <div class="logo">
+          <h2>JATRA.<span class="danger">PAY</span></h2>
+        </div>
+        <div class="close" id="cbtn">
+          <span class="material-symbols-sharp">close</span>
+        </div>
+      </div>
+
+      <!-- sidebar -->
+      <div class="sidebar">
+        <a href="../index.html">
+          <span class="material-symbols-sharp">home</span>
+          <h3>Home</h3>
+        </a>
+        <a href="dash.html" >
+          <span class="material-symbols-sharp">grid_view</span>
+          <h3>Dashboard</h3>
+        </a>
+        <a href="notif.html">
+          <span class="material-symbols-sharp">mail_outline</span>
+          <h3>Notifications</h3>
+          <span class="msg_count">14</span>
+        </a>
+        <a href="report.html">
+          <span class="material-symbols-sharp">report</span>
+          <h3>Reports</h3>
+        </a>
+        <a href="set.html">
+          <span class="material-symbols-sharp">settings</span>
+          <h3>Settings</h3>
+        </a>
+        <a href="abt.html" class="active">
+          <span class="material-symbols-sharp">article</span>
+          <h3>About</h3>
+        </a>
+        <a href="login.html">
+          <span class="material-symbols-sharp">logout</span>
+          <h3>LOGOUT</h3>
+        </a>
+      </div>
+    </aside>
+
+    <main>
+      <!-- Clean Header -->
+      <div class="about-header">
+        <h1>About <span class="brand">JATRA.<span class="brand-highlight">PAY</span></span></h1>
+        <p class="subtitle">Digital Transformation for Public Transport</p>
+      </div>
+      
+      <!-- Elegant Cards Container -->
+      <div class="cards-container">
+        <!-- Card 1: Problem -->
+        <div class="card card-problem">
+          <div class="card-decoration"></div>
+          <div class="card-icon-container">
+            <div class="icon-circle">
+              <span class="material-symbols-sharp">priority_high</span>
+            </div>
+          </div>
+          <h2 class="card-title">The Challenge</h2>
+          <p class="card-description">Traditional public transport faces significant inefficiencies</p>
+          
+          <div class="features-list">
+            <div class="feature">
+              <span class="feature-icon material-symbols-sharp">schedule</span>
+              <div class="feature-content">
+                <h4>Slow Operations</h4>
+                <p>Manual fare collection causes boarding delays</p>
+              </div>
+            </div>
+            
+            <div class="feature">
+              <span class="feature-icon material-symbols-sharp">payments</span>
+              <div class="feature-content">
+                <h4>Cash Dependency</h4>
+                <p>Exact change requirement inconveniences passengers</p>
+              </div>
+            </div>
+            
+            <div class="feature">
+              <span class="feature-icon material-symbols-sharp">security</span>
+              <div class="feature-content">
+                <h4>Revenue Loss</h4>
+                <p>Cash handling leads to potential leakage</p>
+              </div>
+            </div>
+            
+            <div class="feature">
+              <!-- <span class="feature-icon material-symbols-sharp">confused</span> -->
+              <div class="feature-content">
+                <h4>User Confusion</h4>
+                <p>Tourists struggle with unfamiliar fare systems</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="card-footer">
+            <div class="metric">
+              <span class="metric-value">30%</span>
+              <span class="metric-label">Longer Wait Times</span>
+            </div>
+            <div class="metric">
+              <span class="metric-value">15%</span>
+              <span class="metric-label">Revenue Impact</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: Solution -->
+        <div class="card card-solution">
+          <div class="card-decoration"></div>
+          <div class="card-icon-container">
+            <div class="icon-circle">
+              <span class="material-symbols-sharp">auto_awesome</span>
+            </div>
+          </div>
+          <h2 class="card-title">Our Solution</h2>
+          <p class="card-description">A unified digital payment platform for public transport</p>
+          
+          <div class="solution-grid">
+            <div class="solution-item">
+              <div class="solution-icon">
+                <span class="material-symbols-sharp">qr_code_2</span>
+              </div>
+              <h4>QR Code</h4>
+              <p>Scan & pay instantly</p>
+            </div>
+            
+            <div class="solution-item">
+              <div class="solution-icon">
+                <span class="material-symbols-sharp">smartphone</span>
+              </div>
+              <h4>USSD</h4>
+              <p>Feature phone support</p>
+            </div>
+            
+            <div class="solution-item">
+              <div class="solution-icon">
+                <span class="material-symbols-sharp">bolt</span>
+              </div>
+              <h4>Fast Boarding</h4>
+              <p>Seconds to pay & board</p>
+            </div>
+            
+            <div class="solution-item">
+              <div class="solution-icon">
+                <span class="material-symbols-sharp">shield</span>
+              </div>
+              <h4>Secure</h4>
+              <p>Encrypted transactions</p>
+            </div>
+          </div>
+          
+          <div class="ai-section">
+            <div class="ai-tag">
+              <span class="material-symbols-sharp">smart_toy</span>
+              AI-Powered
+            </div>
+            <p>Smart fraud detection & demand analytics</p>
+          </div>
+        </div>
+
+        <!-- Card 3: Benefits -->
+        <div class="card card-benefits">
+          <div class="card-decoration"></div>
+          <div class="card-icon-container">
+            <div class="icon-circle">
+              <span class="material-symbols-sharp">diversity_3</span>
+            </div>
+          </div>
+          <h2 class="card-title">Who Benefits</h2>
+          <p class="card-description">Creating value across the entire ecosystem</p>
+          
+          <div class="beneficiary-section">
+            <div class="beneficiary">
+              <div class="beneficiary-header">
+                <div class="avatar passenger">
+                  <span class="material-symbols-sharp">person</span>
+                </div>
+                <h3>Passengers</h3>
+              </div>
+              <ul class="benefits-list">
+                <li><span class="material-symbols-sharp">check_circle</span> Faster boarding</li>
+                <li><span class="material-symbols-sharp">check_circle</span> No exact change</li>
+                <li><span class="material-symbols-sharp">check_circle</span> Digital records</li>
+              </ul>
+            </div>
+            
+            <div class="beneficiary">
+              <div class="beneficiary-header">
+                <div class="avatar operator">
+                  <span class="material-symbols-sharp">directions_bus</span>
+                </div>
+                <h3>Operators</h3>
+              </div>
+              <ul class="benefits-list">
+                <li><span class="material-symbols-sharp">check_circle</span> Increased revenue</li>
+                <li><span class="material-symbols-sharp">check_circle</span> Real-time analytics</li>
+                <li><span class="material-symbols-sharp">check_circle</span> Automated settlements</li>
+              </ul>
+            </div>
+            
+            <div class="beneficiary">
+              <div class="beneficiary-header">
+                <div class="avatar society">
+                  <span class="material-symbols-sharp">public</span>
+                </div>
+                <h3>Society</h3>
+              </div>
+              <ul class="benefits-list">
+                <li><span class="material-symbols-sharp">check_circle</span> Reduced congestion</li>
+                <li><span class="material-symbols-sharp">check_circle</span> Better planning</li>
+                <li><span class="material-symbols-sharp">check_circle</span> Cashless economy</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="impact-stats">
+            <div class="impact-stat">
+              <span class="stat-number">10M+</span>
+              <span class="stat-label">Daily Users</span>
+            </div>
+            <div class="impact-stat">
+              <span class="stat-number">50K+</span>
+              <span class="stat-label">Vehicles</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- right -->
+    <div class="right">
+      <div class="top">
+        <button id="menu_bar">
+          <span class="material-symbols-sharp">menu</span>
+        </button>
+        <div class="theme-toggler">
+          <span class="material-symbols-sharp active">light_mode</span>
+          <span class="material-symbols-sharp">dark_mode</span>
+        </div>
+        <div class="profile">
+          <div class="info">
+            <p><b>Rehnuma</b></p>
+            <p>User</p>
+          </div>
+          <div class="pp">
+            <img src="../img/p.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../js/abt.js"></script>
+  <script src="js/dash.js"></script>
+</body>
+</html>

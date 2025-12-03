@@ -1,0 +1,467 @@
+    /* Additional styles for QR section */
+    #lg{
+      color: #018e3c;
+    }
+
+    main .heading {
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--clr-dark);
+      margin-bottom: 0.5rem;
+    }
+
+    main .highlight {
+      color: var(--clr-primary);
+    }
+
+    main .tagline {
+      font-size: 0.95rem;
+      color: var(--clr-info-dark);
+      margin-bottom: 2rem;
+    }
+
+    main .how h2 {
+      color: var(--clr-primary);
+      margin-bottom: 1.5rem;
+      font-size: 1.5rem;
+    }
+
+    main .cards {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    main .card {
+      background-color: var(--clr-white);
+      border-radius: var(--card-border-radius);
+      box-shadow: var(--box-shadow);
+      width: 250px;
+      padding: 1.5rem;
+      transition: all 0.3s ease;
+    }
+
+    
+    main .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 1rem 2rem var(--clr-light);
+    }
+
+    main .card img {
+      width: 100%;
+      height: 140px;
+      object-fit: cover;
+      border-radius: var(--border-radius-2);
+      background: var(--clr-info-light);
+    }
+
+    main .card h3 {
+      margin-top: 1rem;
+      color: var(--clr-primary);
+    }
+
+    main .card p {
+      font-size: 0.9rem;
+      color: var(--clr-info-dark);
+      margin-top: 0.5rem;
+    }
+    
+    /* QR Section Styles */
+    .qr-section {
+      margin-top: 4rem;
+      padding: 2.5rem;
+      background-color: var(--clr-white);
+      border-radius: var(--card-border-radius);
+      box-shadow: var(--box-shadow);
+    }
+    
+    .qr-section h2 {
+      color: var(--clr-primary);
+      margin-bottom: 2rem;
+      font-size: 1.8rem;
+      text-align: center;
+    }
+    
+    .qr-actions {
+      display: flex;
+      gap: 2rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 3rem;
+    }
+    
+    .qr-btn {
+      padding: 1.2rem 2.5rem;
+      border: none;
+      border-radius: 12px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      min-width: 250px;
+      justify-content: center;
+    }
+    
+    .qr-btn.generate {
+      background-color: #2563eb;
+      color: white;
+    }
+    
+    .qr-btn.generate:hover {
+      background-color: #1d4ed8;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(37, 99, 235, 0.2);
+    }
+    
+    .qr-btn.scan {
+      background-color: #16a34a;
+      color: white;
+    }
+    
+    .qr-btn.scan:hover {
+      background-color: #15803d;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(22, 163, 74, 0.2);
+    }
+    
+    .qr-content-area {
+      background-color: #f8fafc;
+      border-radius: 12px;
+      padding: 3rem;
+      min-height: 400px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      border: 2px dashed #e2e8f0;
+    }
+    
+    .placeholder-text {
+      font-size: 1.2rem;
+      color: #64748b;
+      max-width: 600px;
+    }
+    
+    .qr-display, .scan-display {
+      width: 100%;
+      display: none;
+    }
+    
+    .active-view {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      animation: fadeIn 0.5s ease;
+    }
+    
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    
+    .qr-display h3, .scan-display h3 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: #1e293b;
+    }
+    
+    .qr-display p, .scan-display p {
+      font-size: 1.1rem;
+      color: #64748b;
+      max-width: 600px;
+      margin-bottom: 2rem;
+      line-height: 1.6;
+    }
+    
+    .qr-image-container {
+      width: 280px;
+      height: 280px;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 2px solid #e2e8f0;
+      background-color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 1.5rem 0 2.5rem 0;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+    
+    .qr-image {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      padding: 20px;
+    }
+    
+    .simple-actions {
+      display: flex;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    
+    .simple-btn {
+      background-color: #2563eb;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    
+    .simple-btn:hover {
+      background-color: #1d4ed8;
+      transform: translateY(-2px);
+    }
+    
+    /* Payment Dialog Styles */
+    .payment-modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 1000;
+      justify-content: center;
+      align-items: center;
+      animation: fadeIn 0.3s ease;
+    }
+    
+    .payment-modal.active {
+      display: flex;
+    }
+    
+    .payment-dialog {
+      background-color: white;
+      border-radius: 12px;
+      width: 90%;
+      max-width: 500px;
+      max-height: 90vh;
+      overflow-y: auto;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+      animation: slideUp 0.4s ease;
+    }
+    
+    @keyframes slideUp {
+      from { transform: translateY(50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    
+    .payment-header {
+      background-color: #2563eb;
+      color: white;
+      padding: 1.5rem;
+      border-radius: 12px 12px 0 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .payment-header h3 {
+      font-size: 1.5rem;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    
+    .close-modal {
+      background: none;
+      border: none;
+      color: white;
+      font-size: 1.5rem;
+      cursor: pointer;
+      padding: 0;
+      width: 30px;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      transition: background-color 0.3s ease;
+    }
+    
+    .close-modal:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+    
+    .payment-body {
+      padding: 2rem;
+    }
+    
+    .payment-info {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+    
+    .payment-info h4 {
+      color: #1e293b;
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    .info-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.5rem 0;
+      border-bottom: 1px solid #e2e8f0;
+    }
+    
+    .info-label {
+      font-weight: 600;
+      color: #1e293b;
+    }
+    
+    .info-value {
+      color: #2563eb;
+      font-weight: 600;
+    }
+    
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+    
+    .form-group label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+      color: #1e293b;
+    }
+    
+    .form-control {
+      width: 100%;
+      padding: 0.75rem;
+      border: 2px solid #e2e8f0;
+      border-radius: 8px;
+      font-size: 1rem;
+      transition: border-color 0.3s ease;
+      background-color: white;
+    }
+    
+    .form-control:focus {
+      outline: none;
+      border-color: #2563eb;
+      box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+    }
+    
+    .fare-input-group {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    
+    .taka-symbol {
+      font-weight: bold;
+      color: #1e293b;
+    }
+    
+    .payment-actions {
+      display: flex;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    
+    .btn-primary {
+      background-color: #2563eb;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      padding: 1rem 2rem;
+      font-size: 1.1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      flex: 1;
+    }
+    
+    .btn-primary:hover {
+      background-color: #1d4ed8;
+      transform: translateY(-2px);
+    }
+    
+    .btn-secondary {
+      background-color: #e2e8f0;
+      color: #1e293b;
+      border: none;
+      border-radius: 8px;
+      padding: 1rem 2rem;
+      font-size: 1.1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      flex: 1;
+    }
+    
+    .btn-secondary:hover {
+      background-color: #d1d5db;
+    }
+    
+    .success-dialog {
+      text-align: center;
+      padding: 2rem;
+    }
+    
+    .success-icon {
+      font-size: 4rem !important;
+      color: #16a34a;
+      margin-bottom: 1rem;
+    }
+    
+    .transaction-id {
+      background-color: #f8fafc;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      font-family: monospace;
+      margin: 1rem 0;
+      display: inline-block;
+    }
+    
+    /* Responsive styles for QR section */
+    @media (max-width: 768px) {
+      .qr-actions {
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .qr-btn {
+        width: 100%;
+        max-width: 300px;
+      }
+      
+      .qr-content-area {
+        padding: 1.5rem;
+        min-height: 350px;
+      }
+      
+      .qr-image-container {
+        width: 250px;
+        height: 250px;
+      }
+      
+      .simple-actions {
+        flex-direction: column;
+        width: 100%;
+        max-width: 200px;
+      }
+      
+      .simple-btn {
+        width: 100%;
+        justify-content: center;
+      }
+    }

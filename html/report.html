@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JATRA.PAY Dashboard</title>
+  <link rel="stylesheet" href="../css/report.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+<body>
+  <div class="container">
+    <!-- aside -->
+    <aside>
+      <!-- top -->
+      <div class="top">
+        <div class="logo">
+          <h2>JATRA.<span class="danger">PAY</span></h2>
+        </div>
+        <div class="close" id="cbtn">
+          <span class="material-symbols-sharp">close</span>
+        </div>
+      </div>
+
+      <!-- sidebar -->
+      <div class="sidebar">
+        <a href="../index.html">
+          <span class="material-symbols-sharp">home</span>
+          <h3>Home</h3>
+        </a>
+        <a href="dash.html" >
+          <span class="material-symbols-sharp">grid_view</span>
+          <h3>Dashboard</h3>
+        </a>
+        <a href="notif.html">
+          <span class="material-symbols-sharp">mail_outline</span>
+          <h3>Notifications</h3>
+          <span class="msg_count">14</span>
+        </a>
+        <a href="report.html" class="active">
+          <span class="material-symbols-sharp">report</span>
+          <h3>Reports</h3>
+        </a>
+        <a href="set.html">
+          <span class="material-symbols-sharp">settings</span>
+          <h3>Settings</h3>
+        </a>
+        <a href="abt.html">
+          <span class="material-symbols-sharp">article</span>
+          <h3>About</h3>
+        </a>
+        <a href="login.html">
+          <span class="material-symbols-sharp">logout</span>
+          <h3>LOGOUT</h3>
+        </a>
+      </div>
+    </aside>
+
+    <main>
+      <div class="reports-header">
+        <h1>My Travel Reports</h1>
+      </div>
+      
+      <!-- Reports Container -->
+      <div class="reports-container">
+        
+        <!-- Travel Summary -->
+        <div class="travel-summary">
+          <h2 class="section-title">
+            <span class="material-symbols-sharp">travel_explore</span>
+            Travel Summary
+          </h2>
+          
+          <div class="summary-cards">
+            <div class="summary-card">
+              <div class="summary-icon">
+                <span class="material-symbols-sharp">directions_bus</span>
+              </div>
+              <div class="summary-content">
+                <h3>Trips Taken</h3>
+                <div class="summary-value">8</div>
+                <p class="summary-change">
+                  <span class="material-symbols-sharp">trending_up</span>
+                  2 more than yesterday
+                </p>
+              </div>
+            </div>
+            
+            <div class="summary-card">
+              <div class="summary-icon">
+                <span class="material-symbols-sharp">payments</span>
+              </div>
+              <div class="summary-content">
+                <h3>Total Spent</h3>
+                <div class="summary-value">BDT 540</div>
+                <p class="summary-change">
+                  <span class="material-symbols-sharp">savings</span>
+                  Saved BDT 40 with JATRA.PAY
+                </p>
+              </div>
+            </div>
+            
+            <div class="summary-card">
+              <div class="summary-icon">
+                <span class="material-symbols-sharp">schedule</span>
+              </div>
+              <div class="summary-content">
+                <h3>Time Saved</h3>
+                <div class="summary-value">45 min</div>
+                <p class="summary-change">
+                  <span class="material-symbols-sharp">bolt</span>
+                  Faster boarding with QR
+                </p>
+              </div>
+            </div>
+            
+            <div class="summary-card">
+              <div class="summary-icon">
+                <span class="material-symbols-sharp">route</span>
+              </div>
+              <div class="summary-content">
+                <h3>Routes Used</h3>
+                <div class="summary-value">4</div>
+                <p class="summary-change">
+                  <span class="material-symbols-sharp">location_on</span>
+                  2 frequent routes
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Recent Trips -->
+        <div class="recent-trips">
+          <div class="section-header">
+            <h2>
+              <span class="material-symbols-sharp">history</span>
+              Recent Trips
+            </h2>
+            <button class="view-details">
+              View All Trips
+              <span class="material-symbols-sharp">chevron_right</span>
+            </button>
+          </div>
+          
+          <div class="trips-list">
+            <div class="trip-card">
+              <div class="trip-header">
+                <div class="trip-route">
+                  <span class="material-symbols-sharp">location_on</span>
+                  <div>
+                    <h3>GEC → Muradpur</h3>
+                    <p class="trip-time">Today • 22:33</p>
+                  </div>
+                </div>
+                <div class="trip-amount">BDT 88</div>
+              </div>
+              <div class="trip-details">
+                <div class="trip-method">
+                  <span class="material-symbols-sharp">qr_code</span>
+                  <span>QR Payment</span>
+                </div>
+                <div class="trip-duration">
+                  <span class="material-symbols-sharp">schedule</span>
+                  <span>Paid in 3 seconds</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="trip-card">
+              <div class="trip-header">
+                <div class="trip-route">
+                  <span class="material-symbols-sharp">location_on</span>
+                  <div>
+                    <h3>Agrabad → New Market</h3>
+                    <p class="trip-time">Today • 19:45</p>
+                  </div>
+                </div>
+                <div class="trip-amount">BDT 65</div>
+              </div>
+              <div class="trip-details">
+                <div class="trip-method">
+                  <span class="material-symbols-sharp">dialpad</span>
+                  <span>USSD Payment</span>
+                </div>
+                <div class="trip-duration">
+                  <span class="material-symbols-sharp">schedule</span>
+                  <span>Paid in 8 seconds</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="trip-card">
+              <div class="trip-header">
+                <div class="trip-route">
+                  <span class="material-symbols-sharp">location_on</span>
+                  <div>
+                    <h3>Port → GEC</h3>
+                    <p class="trip-time">Today • 18:20</p>
+                  </div>
+                </div>
+                <div class="trip-amount">BDT 55</div>
+              </div>
+              <div class="trip-details">
+                <div class="trip-method">
+                  <span class="material-symbols-sharp">qr_code</span>
+                  <span>QR Payment</span>
+                </div>
+                <div class="trip-duration">
+                  <span class="material-symbols-sharp">schedule</span>
+                  <span>Paid in 4 seconds</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Monthly Travel Summary -->
+        <div class="monthly-summary">
+          <div class="monthly-header">
+            <h2>
+              <span class="material-symbols-sharp">summarize</span>
+              December Travel Summary
+            </h2>
+            <button class="download-report">
+              <span class="material-symbols-sharp">download</span>
+              Download PDF
+            </button>
+          </div>
+          
+          <div class="monthly-stats">
+            <div class="monthly-stat">
+              <div class="monthly-icon">
+                <span class="material-symbols-sharp">repeat</span>
+              </div>
+              <div class="monthly-info">
+                <h3>Total Trips</h3>
+                <div class="monthly-value">32</div>
+                <p class="monthly-change">
+                  <span class="material-symbols-sharp">trending_up</span>
+                  +4 from last month
+                </p>
+              </div>
+            </div>
+            
+            <div class="monthly-stat">
+              <div class="monthly-icon">
+                <span class="material-symbols-sharp">payments</span>
+              </div>
+              <div class="monthly-info">
+                <h3>Total Spending</h3>
+                <div class="monthly-value">BDT 2,150</div>
+                <p class="monthly-change">
+                  <span class="material-symbols-sharp">trending_down</span>
+                  -BDT 120 saved
+                </p>
+              </div>
+            </div>
+            
+            <div class="monthly-stat">
+              <div class="monthly-icon">
+                <span class="material-symbols-sharp">schedule</span>
+              </div>
+              <div class="monthly-info">
+                <h3>Time Saved</h3>
+                <div class="monthly-value">3.5 hours</div>
+                <p class="monthly-change">
+                  <span class="material-symbols-sharp">bolt</span>
+                  Faster boarding with QR
+                </p>
+              </div>
+            </div>
+            
+            <div class="monthly-stat">
+              <div class="monthly-icon">
+                <span class="material-symbols-sharp">route</span>
+              </div>
+              <div class="monthly-info">
+                <h3>Routes Used</h3>
+                <div class="monthly-value">12</div>
+                <p class="monthly-change">
+                  <span class="material-symbols-sharp">location_on</span>
+                  4 frequent routes
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- right -->
+    <div class="right">
+      <div class="top">
+        <button id="menu_bar">
+          <span class="material-symbols-sharp">menu</span>
+        </button>
+        <div class="theme-toggler">
+          <span class="material-symbols-sharp active">light_mode</span>
+          <span class="material-symbols-sharp">dark_mode</span>
+        </div>
+        <div class="profile">
+          <div class="info">
+            <p><b>Rehnuma</b></p>
+            <p>User</p>
+          </div>
+          <div class="pp">
+            <img src="../img/p.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../js/report.js"></script>
+  <script src="js/dash.js"></script>
+
+</body>
+</html>
