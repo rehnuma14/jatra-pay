@@ -465,3 +465,64 @@
         justify-content: center;
       }
     }
+
+    /* Dark Theme Styles for Home Page */
+    .dark-theme-variables main .heading {
+      color: var(--clr-white);
+    }
+
+    .dark-theme-variables main .tagline {
+      color: var(--clr-info-light);
+    }
+
+    .dark-theme-variables main .how h2 {
+      color: var(--clr-primary);
+    }
+
+    .dark-theme-variables main .card {
+      background-color: var(--clr-white);
+      box-shadow: var(--box-shadow);
+    }
+
+    .dark-theme-variables main .card:hover {
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+    }
+
+    .dark-theme-variables main .card h3 {
+      color: var(--clr-primary);
+    }
+
+    .dark-theme-variables main .card p {
+      color: var(--clr-info-dark);
+    }
+
+    .dark-theme-variables .qr-section {
+      background-color: var(--clr-white);
+      box-shadow: var(--box-shadow);
+    }
+
+    .dark-theme-variables .qr-section h2 {
+      color: var(--clr-primary);
+    }
+
+    .dark-theme-variables .qr-btn {
+      color: var(--clr-white);
+      background-color: var(--clr-primary);
+      border: 2px solid var(--clr-primary);
+    }
+
+    .dark-theme-variables .qr-btn:hover {
+      background-color: var(--clr-primary-variant);
+      color: var(--clr-white);
+    }
+
+    .dark-theme-variables .qr-content-area {
+      background-color: var(--clr-white);
+      border: 1px solid var(--clr-light);
+      color: var(--clr-dark);
+    }
+
+    .dark-theme-variables .placeholder-text {
+      color: var(--clr-info-dark);
+    }
+
