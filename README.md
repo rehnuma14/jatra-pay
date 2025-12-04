@@ -1,41 +1,28 @@
-# JATRA.PAY
 
-A simple static site for a cashless public transport fare payment system demo.
+# 🚍 JATRA.PAY
 
-**Live demo:** https://rehnuma14.github.io/jatra-pay/
+**Cashless Public Transport Fare Payment — Simple. Fast. Efficient.**
+A static web-based demo showcasing how commuters can pay transport fares digitally using a minimal, user-friendly interface.
 
-**Contents**
-- `index.html` — Home page
-- `html/` — Additional pages (dashboard, notifications, reports, settings, about, login, register)
-- `css/` — Stylesheets for each page
-- `js/` — JavaScript for each page (theme toggle, sidebar, basic UX)
-- `img/` — Images used by the site
+---
 
-**Quick start (view locally)**
-1. Open the project folder in your file explorer.
-2. Open `index.html` in a browser (double-click or right-click → Open with your browser).
+## 🔗 Live Demo
 
-No build tools or package managers are required — this is a static site.
+[https://rehnuma14.github.io/jatra-pay/](https://rehnuma14.github.io/jatra-pay/)
 
-**Development checks**
-- Ensure all asset links are relative to the page location (e.g. pages in `html/` use `../css/...`, `../js/...`, `../img/...`).
-- If changes don't appear in the browser, try a hard refresh: `Ctrl+Shift+R`.
+---
 
-**Enable / reconfigure GitHub Pages**
-If you need to (re)deploy to GitHub Pages:
+## 📌 Overview
 
-1. From the repository on GitHub go to `Settings` → `Pages`.
-2. Under "Build and deployment" set the source to `Branch: main` and folder `/ (root)`.
-3. Save. The site will build and the live URL will be shown (typically `https://<username>.github.io/jatra-pay/`).
+**JATRA.PAY** is a prototype UI for a modern, cashless fare payment system designed to simplify public transport transactions.
+The project demonstrates clean UI/UX, dark/light theme support, and structured page navigation — all built using **HTML, CSS, and JavaScript only**.
 
-You can also use the GitHub CLI from your project folder:
+This is a *static showcase*, intended for concept presentation and front-end demonstration.
 
-**Theme / Dark mode**
-- Dark mode is toggled by the theme button in the top-right and stored in `localStorage`.
-- Shared theme code lives in `js/dash.js`; page-specific files (e.g. `js/home.js`) add page behaviour.
-- CSS variables and the `.dark-theme-variables` selector are used for dark theme styles.
+---
 
-**Folder structure**
+## 📂 Folder Structure
+
 ```
 index.html
 html/
@@ -49,22 +36,64 @@ html/
 css/
   ├─ dash.css
   ├─ home.css
+  ├─ report.css
+  ├─ notif.css
+  ├─ set.css
   └─ ...
 js/
   ├─ dash.js
   ├─ home.js
+  ├─ notif.js
+  ├─ report.js
   └─ ...
 img/
-  └─ (images)
+  └─ all images & icons
 ```
 
-**Notes & troubleshooting**
-- If pages show broken links, check the relative paths — pages inside `html/` must prefix assets with `../`.
-- If dark mode doesn't persist, check browser settings and console for JS errors.
-- If you want me to add a `LICENSE` or CI, tell me which license or CI provider you prefer.
+---
 
-**Contact / Next steps**
-If you want, I can:
-- Add a small `index` redirect so `index.html` links open sub-pages in a single-page app style.
-- Add basic form validation to `regis.html` and `login.html`.
-- Add a `LICENSE` file (MIT/Apache/etc.) — tell me which license you prefer.
+## ✨ Features
+
+### 🔹 **User Interface**
+
+* Clean layout with sidebar navigation
+* Dashboard with quick stats and shortcuts
+* Notification & report pages
+* Settings panel with theme controls
+* Login and registration mock pages
+
+### 🔹 **Dark / Light Theme Support**
+
+* Single toggle button for theme switching
+* Settings stored in `localStorage`
+* CSS variables (`:root`) and `.dark-theme-variables` used for theme styles
+
+### 🔹 **Static but Functional UX**
+
+* Sidebar open/close animation
+* Button interactions
+* Basic page-specific behaviors (JS)
+
+---
+
+## 🛠️ Technologies Used
+
+* **HTML5**
+* **CSS3** (variables, flexbox, layout)
+* **JavaScript** (theme handling, sidebar, page UX)
+* **Google Fonts & Icons**
+
+---
+
+## 🚀 Run Locally (Quick Start)
+
+1. Download or clone the repository
+2. Open the project folder
+3. Double-click **`index.html`**
+4. The site will open in your browser — no installation needed
+
+✔ No Node
+✔ No build tools
+✔ 100% static site
+
+
