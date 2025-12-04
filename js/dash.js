@@ -28,6 +28,7 @@ if (savedTheme === "dark") {
   lightIcon.classList.remove("active");
   darkIcon.classList.add("active");
 } else {
+  document.body.classList.remove("dark-theme-variables");
   lightIcon.classList.add("active");
   darkIcon.classList.remove("active");
 }
